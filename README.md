@@ -3,10 +3,12 @@ welcome bot for discord bot with custom tags
 
 
 # Features
-Image Welcome looks like this:
+## Image Welcome looks like this:
+You can get more template by join our server.
+
 ![Image](https://media.discordapp.net/attachments/855820422960513054/882210623566540890/unknown.png?width=437&height=431)
 
-You can get more template by join our server.
+
 
 
 
