@@ -14,7 +14,7 @@
 
 [Watch Toturial]()
 
-[Join Server]()
+[Join Server](https://discord.gg/gU7XAxTpX5)
 
 # Setup
 - Click Star and Folk this Code
@@ -40,7 +40,7 @@ It looks like this
 
 ![embed](https://user-images.githubusercontent.com/74746579/131488177-cacfe559-02fe-4e6e-a8fc-4ce73c4fd81a.png)
 
-# with image
+# with image given in args
 
 ![withimg](https://media.discordapp.net/attachments/882211817378701352/882213001934024734/unknown.png?width=634&height=422)
 
