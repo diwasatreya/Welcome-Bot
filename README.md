@@ -1,6 +1,31 @@
 # Welcome-Bot
-welcome bot for discord bot with custom tags
+<div align=center>
 
+  
+  <a href="https://github.com/discordjs">
+    <img src="https://img.shields.io/badge/discord.js-v12.5.3-blue.svg?logo=npm" alt="discordjs">
+  </a>
+
+  <a href="https://github.com/diwasatreya/Advanced-Command-Handler/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-Apache%202-blue" alt="license">
+  </a>
+
+</div>
+
+[Watch Toturial]()
+[Join Server]()
+
+# Setup
+- Click Star and Folk this Code
+- ![image](https://user-images.githubusercontent.com/74746579/131488961-1768f9ea-edc1-43aa-9fa3-b3c2976aee09.png)
+
+- Host in REPLIT
+
+[![image](https://camo.githubusercontent.com/807ef293459e367b2769d7b590e00f31e35d6b2e1c7bc4f570e37abbc3650f3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f5a65726f446973636f72642f4769766561776179426f74)](https://repl.it/github/diwasatreya/Welcome-Bot)
+
+- Run `npm install` in console or shell
+- Add prefix and developer id in `config.json`
+- Add TOKEN in `.env` file or for replit user in secrets 
 
 # Features
 ## Image Welcome looks like this:
