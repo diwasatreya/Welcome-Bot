@@ -1,6 +1,15 @@
 # Welcome-Bot
 welcome bot for discord bot with custom tags
 
+
+# Features
+Image Welcome looks like this:
+![Image](https://media.discordapp.net/attachments/855820422960513054/882210623566540890/unknown.png?width=437&height=431)
+
+You can get more template by join our server.
+
+
+
 **Note:** You must set \`welcomechannel\` \`description\`, \`thumnail\` to start welcome and to use test command. 
 
 ## Only for \`setwelcomechannel\` [ Compulsory ]
