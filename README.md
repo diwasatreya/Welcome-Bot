@@ -9,6 +9,10 @@ You can get more template by join our server.
 ![Image](https://media.discordapp.net/attachments/855820422960513054/882210623566540890/unknown.png?width=437&height=431)
 
 
+# Embed Welcome
+It looks like this
+
+![embed](https://user-images.githubusercontent.com/74746579/131488177-cacfe559-02fe-4e6e-a8fc-4ce73c4fd81a.png)
 
 
 
