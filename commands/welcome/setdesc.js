@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const db = require("quick.db")
 // This code is made by Supreme#2401
 module.exports = {
-  name: "setdescripton",
+  name: "setdescription",
   aliases: ["setdesc", "sd"],
   category: ":frame_photo: WELCOME",
   usage: "sd <message>",
