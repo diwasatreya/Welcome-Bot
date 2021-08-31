@@ -1,6 +1,7 @@
 const { prefix, developerID } = require("./config.json")
 const { config } = require("dotenv");
 const db =require("quick.db");
+const welc = require("image-cord")
 const moment = require("moment");
 const Discord = require('discord.js')
 const fetch = require("node-fetch");
@@ -115,7 +116,7 @@ client.on("guildMemberAdd", async member => {
     const img = await canvas.loadImage(`${link}`);
 
  
-let userPfp = await resolveImage(message.author.displayAvatarURL({
+let userPfp = await resolveImage(member.user.displayAvatarURL({
             format: "jpg",
             size: 1024
         }))
@@ -125,16 +126,16 @@ let userPfp = await resolveImage(message.author.displayAvatarURL({
       .setColor(`#FFFFFF`)
       .setTextFont('215px Quicksand-SemiBold')
       .setTextAlign("center")
-      .printWrappedText(moment(message.author.createdAt).format("MMMM d, YYYY"), 2655, 1980)
+      .printWrappedText(moment(member.user.createdAt).format("MMMM d, YYYY"), 2655, 1980)
       .setTextAlign("center")
       .setTextFont('215px Quicksand-SemiBold')
-      .printWrappedText(message.author.tag, 1920, 1355)
-      .printWrappedText(`${message.guild.members.cache.size}th member`, 2180, 2600)
+      .printWrappedText(member.user.tag, 1920, 1355)
+      .printWrappedText(`${member.guild.members.cache.size}th member`, 2180, 2600)
       .setColor(`#FFFFFF`)
       .setTextAlign("center")
       .setTextFont('250px Quicksand-SemiBold')
       .setTextAlign("center")
-      .printWrappedText(message.guild.name, 1900, 3100)
+      .printWrappedText(member.guild.name, 1900, 3100)
       .printCircularImage(userPfp, 5260, 1714, 1210, 1120)
       .toBuffer();
       
