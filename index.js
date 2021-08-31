@@ -101,6 +101,8 @@ let tnail = nail.replace(/`?\?useravatar`?/g, member.user.displayAvatarURL({ dyn
 client.channels.cache.get(channel).send(embed)
 });
 
+const links = require('./JSON/link.json')
+
 client.on("guildMemberAdd", async member => {
   let chx = db.get(`welcomeimg_${member.guild.id}`);
   if (chx === null) {
@@ -108,25 +110,34 @@ client.on("guildMemberAdd", async member => {
   }
 
 
- const img = await canvas.loadImage('https://i.ibb.co/D5KTTzJ/welcome.png');
+ let link = links.link[Math.floor((Math.random() * links.link.length))];
+
+    const img = await canvas.loadImage(`${link}`);
+
  
-let userPfp = await resolveImage(member.user.displayAvatarURL({
+let userPfp = await resolveImage(message.author.displayAvatarURL({
             format: "jpg",
             size: 1024
         }))
 
-    let image = new Canvas(6912, 2304)
-      .printImage(img, 0, 0, 6912, 2304)
-      .setColor(`#FF0000`)
-      .setTextFont('200px Vampire Wars')
+    let image = new Canvas(6912, 3456)
+      .printImage(img, 0, 0, 6912, 3456)
+      .setColor(`#FFFFFF`)
+      .setTextFont('215px Quicksand-SemiBold')
       .setTextAlign("center")
-      .printWrappedText(member.user.tag, 1141, 1990)
-      .setColor(`#18191c`)
+      .printWrappedText(moment(message.author.createdAt).format("MMMM d, YYYY"), 2655, 1980)
       .setTextAlign("center")
-      .setTextFont('300px Vampire Wars')
-      .printWrappedText(member.guild.name, 4310, 1600)
-      .printCircularImage(userPfp, 1139, 922, 762, 762)
+      .setTextFont('215px Quicksand-SemiBold')
+      .printWrappedText(message.author.tag, 1920, 1355)
+      .printWrappedText(`${message.guild.members.cache.size}th member`, 2180, 2600)
+      .setColor(`#FFFFFF`)
+      .setTextAlign("center")
+      .setTextFont('250px Quicksand-SemiBold')
+      .setTextAlign("center")
+      .printWrappedText(message.guild.name, 1900, 3100)
+      .printCircularImage(userPfp, 5260, 1714, 1210, 1120)
       .toBuffer();
+      
     
 
 
