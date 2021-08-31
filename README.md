@@ -7,6 +7,11 @@ welcome bot for discord bot with custom tags
       setwelcomechannel <#channel>
 
 # Only for \`setdescription\` [ Compulsory ]
+| Featured Commands | Description | Example |
+| --- | --- | --- |
+|`command`|desc.| Usage |
+|`command`|desc.| usage|
+|`command`|desc.| usage |
       
 | Tags | Info | Example |
 | --- | --- --- |
