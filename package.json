@@ -1,7 +1,7 @@
 {
-  "name": "Command-Handler",
+  "name": "Welcome-Bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "welcome bot with custom tags used",
   "main": "index.js",
   "scripts": {
     "test": "Thanks for using"
@@ -20,6 +20,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "image-cord": "^1.0.3",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",
     "quick.db": "^7.1.3"
