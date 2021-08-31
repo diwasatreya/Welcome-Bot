@@ -3,16 +3,22 @@ welcome bot for discord bot with custom tags
 
 **Note:** You must set \`welcomechannel\` \`description\`, \`thumnail\` to start welcome and to use test command. 
 
+| Featured Commands | Description | Example |
+| --- | --- | --- |
+|`command`|desc.| Usage |
+|`command`|desc.| usage|
+|`command`|desc.| usage |
+
       Only for \`setwelcomechannel\` [ Compulsory ]
       setwelcomechannel <#channel>
 
       Only for \`setdescription\` [ Compulsory ]
-      **Tags** : **Info** : **Example**
-      ?user : Display username only : Supreme
-      ?tag : Display username with tag : Supreme#2401
-      ?mention : Mention user in description : <@519666024220721152>
-      ?server : Display server name : Supreme Club
-      ?rank : Position to join server : 69th Member
+      | **Tags** | **Info** | **Example** |
+      | ?user | Display username only | Supreme |
+      | ?tag | Display username with tag | Supreme#2401 |
+      | ?mention | Mention user in description | <@519666024220721152> |
+      | ?server | Display server name | Supreme Club |
+      | ?rank | Position to join server | 69th Member |
 
       Only for \`setthumbnail\` [ Compulsory ]
       **Tags** : **Info**
