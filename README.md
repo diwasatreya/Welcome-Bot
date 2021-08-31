@@ -14,6 +14,10 @@ It looks like this
 
 ![embed](https://user-images.githubusercontent.com/74746579/131488177-cacfe559-02fe-4e6e-a8fc-4ce73c4fd81a.png)
 
+# with image
+
+![withimg](https://media.discordapp.net/attachments/882211817378701352/882213001934024734/unknown.png?width=634&height=422)
+
 
 
 **Note:** You must set \`welcomechannel\` \`description\`, \`thumnail\` to start welcome and to use test command. 
