@@ -14,8 +14,8 @@ registerFont('./fonts/Quicksand-SemiBold.ttf', { family: 'Quicksand-SemiBold' })
 
 
 module.exports = {
-  name: "imgtest",
-  aliases: ["it"],
+  name: "testimage",
+  aliases: ["ti"],
   category: ":frame_photo: WELCOME",
   usage: "it",
   description: "Test image welcome.",
