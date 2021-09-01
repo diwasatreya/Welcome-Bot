@@ -12,7 +12,7 @@
 
 </div>
 
-[Watch Toturial]()
+[Watch Toturial](https://youtu.be/wsJTlnhHt08)
 
 [Join Server](https://discord.gg/gU7XAxTpX5)
 
