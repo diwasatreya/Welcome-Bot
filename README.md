@@ -56,9 +56,9 @@ It looks like this
 | Tags | Info | Example |
 | --- | --- | --- |
 | `?user` | Display username only | Supreme |
-| `?tag` | Display username with tag | Supreme#2401 |
+| `?tag` | Display username with tag | Atreya#2401 |
 | `?mention` | Mention user in description | <@519666024220721152> |
-| `?server` | Display server name | Supreme Club |
+| `?server` | Display server name | Aromax Development |
 | `?rank` | Position to join server | 69th Member |
 
 ## Only for \`setthumbnail\` [ Compulsory ]

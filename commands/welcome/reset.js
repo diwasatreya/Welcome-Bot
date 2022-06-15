@@ -15,7 +15,7 @@ module.exports = {
   db.delete(`image_${message.guild.id}`)
   db.delete(`thumbnail_${message.guild.id}`)
 
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
     
     message.channel.send(`Done`)
   }

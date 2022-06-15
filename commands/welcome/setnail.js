@@ -15,7 +15,7 @@ module.exports = {
 
   if (!text || text.length > 1000) return message.channel.send(`**${message.author.username}** give me link or do \`?useravatar\ to discplay user avatar or \`?serveravatar\` to display server avatar in thumbnail`); 
   
-  // This code is made by Supreme#2401
+  // This code is made by Atreya#2401
    
     db.set(`thumbnail_${message.guild.id}`, text)
     

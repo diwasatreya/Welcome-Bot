@@ -19,7 +19,7 @@ let mes = text.replace(/`?\?user`?/g, message.author.username).replace(/`?\?serv
 
 let tnail = nail.replace(/`?\?useravatar`?/g, message.author.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, message.guild.iconURL({ dynamic: true }))
 
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
 
  
 

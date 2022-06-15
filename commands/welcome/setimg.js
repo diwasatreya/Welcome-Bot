@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const db = require("quick.db")
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
 module.exports = {
   name: "setimage",
   aliases: ["setimg", "si"],

@@ -16,7 +16,7 @@ const client = new Discord.Client({
 let cooldown = new Set();
 let cdseconds = 1; // cooldown time
 
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
 
 
 client.commands = new Discord.Collection();
@@ -82,13 +82,13 @@ let channel = db.get(`welcome_${member.guild.id}`);
 if (channel === null) {
     return;
   }
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
   
 let mes = text.replace(/`?\?user`?/g, member.user.username).replace(/`?\?server`?/g, member.guild.name).replace(/`?\?tag`?/g, member.user.tag).replace(/`?\?mention`?/g, `<@${member.user.id}>`).replace(/`?\?rank`?/g, member.guild.members.cache.size);
 
 let tnail = nail.replace(/`?\?useravatar`?/g, member.user.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, member.guild.iconURL({ dynamic: true }))
 
-// This code is made by Supreme#2401
+// This code is made by Atreya#2401
 
   const embed = new Discord.MessageEmbed()
 .setTitle(`Welcome to ${member.guild.name}`)
@@ -157,7 +157,7 @@ require('http').createServer((req, res) => res.end(`
  |-----------------------------------------|
  |• Alive: 24/7                            |
  |-----------------------------------------|
- |• Author: Supreme#2401                   |
+ |• Author: Atreya#2401                   |
  |-----------------------------------------|
  |• Server: https://discord.gg/gU7XAxTpX5  |
  |-----------------------------------------|

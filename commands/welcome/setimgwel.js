@@ -9,7 +9,7 @@ module.exports = {
   description: "Set the welcome channel",
   run: (client, message, args) => {
 
-  // This code is made by Supreme#2401
+  // This code is made by Atreya#2401
      if (!message.member.hasPermission("ADMINISTRATION")) {
       return message.channel.send("You do not enough permission to use this command.");
     }
