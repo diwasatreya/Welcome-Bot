@@ -3,7 +3,7 @@
   
   <img src="welcome bot.png" />
 
-  <h2 align="center">Discord-Server-Dashboard</h2>
+  <h2 align="center">Welcome Bot</h2>
 
   It is a fully responsive discord server/bot dashboard template. Here you can see login system also. 
 
