@@ -17,7 +17,7 @@ module.exports = {
   
     db.set(`desc_${message.guild.id}`, text)
 
-    let mes = text.replace(/`?\?user`?/g, message.author.username).replace(/`?\?server`?/g, message.guild.name).replace(/`?\?tag`?/g, message.author.tag).replace(/`?\?mention`?/g, `<@${message.author.id}>`)
+    const mes = text.replace(/`?\?user`?/g, message.author.username).replace(/`?\?server`?/g, message.guild.name).replace(/`?\?tag`?/g, message.author.tag).replace(/`?\?mention`?/g, `<@${message.author.id}>`)
     
     message.channel.send(`Now in welcome message description will be \n \`${mes}\` `)
   }

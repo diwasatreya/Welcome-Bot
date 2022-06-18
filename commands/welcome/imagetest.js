@@ -22,18 +22,18 @@ module.exports = {
   run: async (client, message, args) => {
    
 
-    let m = await message.channel.send(`**${message.author.username}** please wait image welcome looks like this:`);
-    let link = links.link[Math.floor((Math.random() * links.link.length))];
+    const m = await message.channel.send(`**${message.author.username}** please wait image welcome looks like this:`);
+    const link = links.link[Math.floor((Math.random() * links.link.length))];
 
     const img = await canvas.loadImage(`${link}`);
 
  
-let userPfp = await resolveImage(message.author.displayAvatarURL({
+const userPfp = await resolveImage(message.author.displayAvatarURL({
             format: "jpg",
             size: 1024
         }))
 
-    let image = new Canvas(6912, 3456)
+    const image = new Canvas(6912, 3456)
       .printImage(img, 0, 0, 6912, 3456)
       .setColor(`#FFFFFF`)
       .setTextFont('215px Quicksand-SemiBold')
