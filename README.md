@@ -5,7 +5,7 @@
 
   <h2 align="center">Welcome Bot</h2>
 
-  It is a fully responsive discord server/bot dashboard template. You can also see the efficacious login system!
+welcome bot for discord bot with custom tags. By Atreya#2401
 
 
 </div>
