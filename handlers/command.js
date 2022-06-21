@@ -2,7 +2,7 @@ const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
 
 
-let table = new ascii("Infomations");
+const table = new ascii("Infomations");
 table.setHeading("Commands", " Status");
 
 module.exports = (client) => {
@@ -13,13 +13,13 @@ module.exports = (client) => {
     
        
         for (let file of commands) {
-            let pull = require(`../commands/${dir}/${file}`);
+            const pull = require(`../commands/${dir}/${file}`);
     
             if (pull.name) {
                 client.commands.set(pull.name, pull);
                 table.addRow(file, '✅');
             } else {
-                table.addRow(file, `❌  Somethings is missing in this file.`);
+                table.addRow(file, `❌ Something is missing in this file!`);
                 continue;
             }
     

@@ -13,7 +13,7 @@ module.exports = {
      if (!message.member.hasPermission("ADMINISTRATION")) {
       return message.channel.send("You do not enough permission to use this command.");
     }
-    let channel = message.mentions.channels.first()
+    const channel = message.mentions.channels.first()
     
     if(!channel) {
       return message.channel.send("You have to specify the channel")

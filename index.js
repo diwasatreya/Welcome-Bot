@@ -13,8 +13,8 @@ const { Client, MessageEmbed }  = require('discord.js');
 const client = new Discord.Client({
   disableEveryone: false
 });
-let cooldown = new Set();
-let cdseconds = 1; // cooldown time
+const cooldown = new Set();
+const cdseconds = 1; // cooldown time
 
 // This code is made by Atreya#2401
 
@@ -73,10 +73,10 @@ client.on("guildMemberAdd", async member => {
 
   
 
-let channel = db.get(`welcome_${member.guild.id}`);
-  let text = db.get(`desc_${member.guild.id}`)
-   let img = db.get(`image_${member.guild.id}`)
-   let nail = db.get(`thumbnail_${member.guild.id}`)
+const channel = db.get(`welcome_${member.guild.id}`);
+  const text = db.get(`desc_${member.guild.id}`)
+   const img = db.get(`image_${member.guild.id}`)
+   const nail = db.get(`thumbnail_${member.guild.id}`)
 
 
 if (channel === null) {
@@ -84,9 +84,9 @@ if (channel === null) {
   }
 // This code is made by Atreya#2401
   
-let mes = text.replace(/`?\?user`?/g, member.user.username).replace(/`?\?server`?/g, member.guild.name).replace(/`?\?tag`?/g, member.user.tag).replace(/`?\?mention`?/g, `<@${member.user.id}>`).replace(/`?\?rank`?/g, member.guild.members.cache.size);
+const mes = text.replace(/`?\?user`?/g, member.user.username).replace(/`?\?server`?/g, member.guild.name).replace(/`?\?tag`?/g, member.user.tag).replace(/`?\?mention`?/g, `<@${member.user.id}>`).replace(/`?\?rank`?/g, member.guild.members.cache.size);
 
-let tnail = nail.replace(/`?\?useravatar`?/g, member.user.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, member.guild.iconURL({ dynamic: true }))
+const tnail = nail.replace(/`?\?useravatar`?/g, member.user.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, member.guild.iconURL({ dynamic: true }))
 
 // This code is made by Atreya#2401
 
@@ -105,23 +105,23 @@ client.channels.cache.get(channel).send(embed)
 const links = require('./JSON/link.json')
 
 client.on("guildMemberAdd", async member => {
-  let chx = db.get(`welcomeimg_${member.guild.id}`);
+  const chx = db.get(`welcomeimg_${member.guild.id}`);
   if (chx === null) {
     return;
   }
 
 
- let link = links.link[Math.floor((Math.random() * links.link.length))];
+ const link = links.link[Math.floor((Math.random() * links.link.length))];
 
     const img = await canvas.loadImage(`${link}`);
 
  
-let userPfp = await resolveImage(member.user.displayAvatarURL({
+const userPfp = await resolveImage(member.user.displayAvatarURL({
             format: "jpg",
             size: 1024
         }))
 
-    let image = new Canvas(6912, 3456)
+    const image = new Canvas(6912, 3456)
       .printImage(img, 0, 0, 6912, 3456)
       .setColor(`#FFFFFF`)
       .setTextFont('215px Quicksand-SemiBold')
@@ -153,7 +153,7 @@ let userPfp = await resolveImage(member.user.displayAvatarURL({
 // Do not change anything here
 require('http').createServer((req, res) => res.end(`
  |-----------------------------------------|
- |              Informations               |
+ |              Information               |
  |-----------------------------------------|
  |• Alive: 24/7                            |
  |-----------------------------------------|
@@ -165,7 +165,7 @@ require('http').createServer((req, res) => res.end(`
  |-----------------------------------------|
  |• License: Apache License 2.0            |
  |-----------------------------------------|
-`)).listen(3000) //Dont remove this 
+`)).listen(3000) //Don't remove this 
 
 client.on("ready", () => {
    client.user.setStatus("dnd"); // You can change it to online, dnd, idle

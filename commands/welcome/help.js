@@ -3,7 +3,7 @@ const { prefix, developerID } = require("../../config.json")
 module.exports = {
   name: "help",
   description:
-    "Get list of all command and even get to know every command detials",
+    "Get list of all command and even get to know every command details",
   usage: "help <cmd>",
   category: ":frame_photo: WELCOME",
   run: async (client, message, args) => {
@@ -12,24 +12,24 @@ module.exports = {
       const command = await client.commands.get(args[0]);
 
       if (!command) {
-        return message.channel.send("Unknown Command: " + args[0]);
+        return message.channel.send(`Unknown Command: ${args[0]}`);
       }
 
-      let embed = new MessageEmbed()
+      const embed = new MessageEmbed()
         .setAuthor(command.name, client.user.displayAvatarURL())
         .addField("Description", command.description || "Description is not provided join support server for help")
-        .addField("Usage", "`" + command.usage + "`" || "Not Provied Join Support server for help")
-        .addField("Aliases", "```" + command.aliases + "```"|| "There is no aliases")
+        .addField("Usage", `\`${command.usage}\`` || "Not Provided Join Support server for help")
+        .addField("Aliases", `\`\`\`${command.aliases}\`\`\``|| "There is no aliases")
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("#000000")
         .setFooter(`Join our support server `);
 
       return message.channel.send(embed).then(m => m.delete({ timeout: 8000 }));
-    } else {
-      const commands = await client.commands;
+    }
+    const commands = await client.commands;
 
-      let emx = new MessageEmbed()
-        .setDescription(`**Note:** You must set \`welcomechannel\` \`description\`, \`thumnail\` to start welcome and to use test command. 
+    const emx = new MessageEmbed()
+      .setDescription(`**Note:** You must set \`welcomechannel\` \`description\`, \`thumnail\` to start welcome and to use test command. 
 
       Only for \`${prefix}setwelcomechannel\` [ Compulsory ]
       setwelcomechannel <#channel>
@@ -61,33 +61,29 @@ module.exports = {
 
        Do \`${prefix}help <command>\` to see aliases of that command`)
        
-        .setColor("#FFFFF0")
-        .setFooter(`Code Owner: Atreya#2401`)
+      .setColor("#FFFFF0")
+      .setFooter(`Code Owner: Atreya#2401`)
     
 
-      let com = {};
-      for (let comm of commands.array()) {
-        let category = comm.category || "Unknown";
-        let name = comm.name;
+    const com = {};
+    for (let comm of commands.array()) {
+      const category = comm.category || "Unknown";
+      const { name } = comm;
 
-        if (!com[category]) {
-          com[category] = [];
-        }
-        com[category].push(name);
+      if (!com[category]) {
+        com[category] = [];
       }
-
-      for(const [key, value] of Object.entries(com)) {
-        let category = key;
-
-        let desc = "`" + value.join("` • `") + "`";
-
-        emx.addField(`${category}`, desc);
-      }
-
-     var msg = await message.channel.send(emx)
-          
-          
-
+      com[category].push(name);
     }
+
+    for(const [key, value] of Object.entries(com)) {
+      const category = key;
+
+      const desc = `\`${value.join("` • `")}\``;
+
+      emx.addField(`${category}`, desc);
+    }
+
+    const msg = await message.channel.send(emx)
   }
 };

@@ -7,17 +7,17 @@ module.exports = {
   category: ":frame_photo: WELCOME",
 
   run: async(client, message, args) => {
-  let channel = db.get(`welcome_${message.guild.id}`);
-  let text = db.get(`desc_${message.guild.id}`)
-   let img = db.get(`image_${message.guild.id}`)
-   let nail = db.get(`thumbnail_${message.guild.id}`)
-   let me = db.get(`mention_${message.guild.id}`)
+  const channel = db.get(`welcome_${message.guild.id}`);
+  const text = db.get(`desc_${message.guild.id}`)
+   const img = db.get(`image_${message.guild.id}`)
+   const nail = db.get(`thumbnail_${message.guild.id}`)
+   const me = db.get(`mention_${message.guild.id}`)
 
 
   
-let mes = text.replace(/`?\?user`?/g, message.author.username).replace(/`?\?server`?/g, message.guild.name).replace(/`?\?tag`?/g, message.author.tag).replace(/`?\?mention`?/g, `<@${message.author.id}>`).replace(/`?\?rank`?/g, message.guild.members.cache.size);
+const mes = text.replace(/`?\?user`?/g, message.author.username).replace(/`?\?server`?/g, message.guild.name).replace(/`?\?tag`?/g, message.author.tag).replace(/`?\?mention`?/g, `<@${message.author.id}>`).replace(/`?\?rank`?/g, message.guild.members.cache.size);
 
-let tnail = nail.replace(/`?\?useravatar`?/g, message.author.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, message.guild.iconURL({ dynamic: true }))
+const tnail = nail.replace(/`?\?useravatar`?/g, message.author.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, message.guild.iconURL({ dynamic: true }))
 
 // This code is made by Atreya#2401
 
