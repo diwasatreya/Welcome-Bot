@@ -5,7 +5,7 @@
 
   <h2 align="center">Welcome Bot</h2>
 
-welcome bot for discord bot with custom tags. By Atreya#2401
+welcome bot for discord bot with custom tags 🤌. By Atreya#2401
 
 
 </div>
