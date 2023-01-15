@@ -90,3 +90,7 @@ It resets all everything: description, image, thumnail and welcome channel.
 Use this command by after completing all the [ Compulsory ] tag was marked.
 
 Do \`help <command>\` to see the aliases of that command
+
+
+# Contact
+- Twitter: https://twitter.com/DiwasAtreya
