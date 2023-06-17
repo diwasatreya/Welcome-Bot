@@ -14,7 +14,7 @@ const client = new Discord.Client({
   disableEveryone: false
 });
 const cooldown = new Set();
-const cdseconds = 1; // cooldown time
+const cdseconds = 1; 
 
 // This code is made by Atreya#2401
 
