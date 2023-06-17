@@ -88,7 +88,6 @@ const mes = text.replace(/`?\?user`?/g, member.user.username).replace(/`?\?serve
 
 const tnail = nail.replace(/`?\?useravatar`?/g, member.user.displayAvatarURL({ dynamic: true })).replace(/`?\?serveravatar`?/g, member.guild.iconURL({ dynamic: true }))
 
-// This code is made by Atreya#2401
 
   const embed = new Discord.MessageEmbed()
 .setTitle(`Welcome to ${member.guild.name}`)
